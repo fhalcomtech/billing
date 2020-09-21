@@ -2,9 +2,12 @@ package com.fhalcom.tech.electronic.billing.electronic.document;
 
 import org.springframework.stereotype.Component;
 
+import javax.xml.crypto.dsig.XMLObject;
+
 @Component("electronicdocumentiCOMP")
 public interface ElectronicDocumentI {
-    public String generateXmlForSRI();
-    public void sendToAuthorize();
-    public void analyzeDocument();
+    public XMLObject generateXmlForSRI();
+    public Boolean sendToAuthorize();
+    public Boolean analyzeDocument();
+    public void generateAccessKey();
 }
