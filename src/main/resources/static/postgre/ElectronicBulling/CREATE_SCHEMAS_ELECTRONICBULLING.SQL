@@ -1,8 +1,9 @@
----------------------------------------------------------
 \c electronicbulling_dv fhalcom;
 DROP SCHEMA IF EXISTS ELECTRONICDOCUMENT;
 CREATE SCHEMA IF NOT EXISTS ELECTRONICDOCUMENT
 AUTHORIZATION fhalcom;
+
+
 
 \c electronicbulling_dv_hist fhalcom
 DROP SCHEMA IF EXISTS ELECTRONICDOCUMENT;
